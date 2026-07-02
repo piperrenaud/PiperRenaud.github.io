@@ -1,0 +1,22 @@
+body {
+    background-color: #e4d0db;
+    margin: 0;
+    padding: 40px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+main {
+    line-height: 2;
+}
+
+.nes-btn {
+    margin-top: 20px;
+}
