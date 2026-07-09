@@ -46,7 +46,6 @@ function renderProject(project) {
   // About the project
   html += `
     <div class="about-project">
-      <h3>ABOUT THE PROJECT</h3>
       ${paragraphs(project.about)}
     </div>
   `;
@@ -75,45 +74,53 @@ function renderProject(project) {
   html += `<h2 class="section-title">MY ROLE</h2>`;
   html += `
     <div class="role-text">
+      <h3 class="role-title">${project.myRole.title}</h3>
       ${paragraphs(project.myRole.intro)}
-      ${bulletList(project.myRole.bullets)}
+      <h4 class="role-subheading">Responsibilities:</h4>
+      ${bulletList(project.myRole.responsibilities)}
     </div>
   `;
 
   // Technical Challenges
-  if (project.technicalChallenges && project.technicalChallenges.length) {
+    if (project.technicalChallenges && project.technicalChallenges.length) {
     html += `<h2 class="section-title">TECHNICAL CHALLENGES</h2>`;
     project.technicalChallenges.forEach(c => {
-      html += `
+        html += `
         <div class="nes-container is-dark challenge-box">
-          <span class="challenge-tag">Challenge</span>
-          <h4>Problem</h4>
-          <p>${c.problem}</p>
-          <h4>Solution</h4>
-          <p>${c.solution}</p>
-          <h4>Result</h4>
-          <p>${c.result}</p>
+            <span class="challenge-tag">${c.name}:</span>
+
+            <h4>Problem</h4>
+            <p>${c.problem}</p>
+
+            <h4>Solution</h4>
+            <p>${c.solution}</p>
+
+            <h4>Result</h4>
+            ${Array.isArray(c.result) ? bulletList(c.result) : bulletList(c.result.split(",").map(r => r.trim()))}
         </div>
-      `;
+        `;
     });
-  }
+    }
 
   // Interesting Features
-  if (project.features && project.features.length) {
+    if (project.features && project.features.length) {
     html += `<h2 class="section-title">INTERESTING FEATURES</h2>`;
-    project.features.forEach((f, i) => {
-      const reverse = i % 2 === 1 ? "reverse" : "";
-      html += `
-        <div class="nes-container is-dark feature-box ${reverse}">
-          <div class="feature-text">
-            <h4>Feature</h4>
+
+    project.features.forEach(f => {
+        html += `
+        <div class="nes-container is-dark feature-box">
+            <div class="feature-text">
+            <h3 class="feature-name">${f.name || "Feature Name"}</h3>
             <p>${f.text}</p>
-          </div>
-          <div class="feature-image">${imageOrPlaceholder(f.image, 170, 120)}</div>
+            </div>
+
+            <div class="feature-image">
+            ${imageOrPlaceholder(f.image, 220, 140)}
+            </div>
         </div>
-      `;
+        `;
     });
-  }
+    }
 
   // Technologies Used
   html += `<h2 class="section-title">TECHNOLOGIES USED</h2>`;
