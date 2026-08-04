@@ -125,7 +125,7 @@ nav.main-nav a:hover {
 .hero-image img {
     width: 100%;
     max-width: 280px;
-    height: 140px;
+    height: auto;
     image-rendering: pixelated;
 }
 
@@ -161,20 +161,30 @@ nav.main-nav a:hover {
 .about-hero-text h1 {
     color: var(--accent-blue);
     font-size: 36px;
-    margin: 0 0 18px 0;
+    margin: 0 0 14px 0;
 }
 
 .about-hero-text p {
     font-size: 24px;
     color: white;
     margin: 0;
+    line-height: 1.2;
+    margin: 0 0 16px 0;
 }
 
 .about-hero-image {
-    flex: 0 0 180px;
+    flex: 0 0 280px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 24px; 
+}
+
+.about-hero-image img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    image-rendering: pixelated;
 }
 
 .about-columns {
@@ -224,6 +234,30 @@ nav.main-nav a:hover {
     width: 5px;
     height: 5px;
     background: white;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 440px;
+}
+
+.skill-item {
+    display: auto;
+    align-items: center;
+    gap: 1px;
+}
+
+.skill-item span {
+    color: white;
+    font-size: 24px;
+    flex: 0 0 140px;  /*width of skill name */
+}
+
+.skill-item progress {
+    flex: 0 0 280px;
+    height: 20px;
 }
 
 .education-col {
@@ -309,8 +343,8 @@ nav.main-nav a:hover {
     justify-content: space-between;
     padding: 0 24px;
     margin: 10px 0 20px 0;
-    border-bottom: 4px dotted var(--border-blue);
-    padding-bottom: 14px;
+    border-top: 4px dotted var(--border-blue);
+    padding-top: 14px;
 }
 
 .section-header h2 {
@@ -440,7 +474,7 @@ nav.main-nav a:hover {
 
 .about-project {
     text-align: center;
-    max-width: 760px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -452,9 +486,10 @@ nav.main-nav a:hover {
 }
 
 .about-project p {
-    font-size: 18px;
+    font-size: 24px;
+    line-height: 1.2;
     color: white;
-    margin: 0 0 14px 0;
+    margin: 0 0 16px 0;
 }
 
 .project-info-grid {
@@ -586,7 +621,7 @@ nav.main-nav a:hover {
 }
 
 .tech-badge.is-concepts{
-    background: #d6bc5f;
+    background: #45699b;
 }
 
 .learned-text p{
@@ -599,21 +634,32 @@ nav.main-nav a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+
+    align-items: start;
 }
 
 .media-item{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.media-item img, .media-item video{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .media-item .placeholder-box{
     width: 100%;
-    height: 140px;
+    height: auto;
     margin-bottom: 10px;
 }
 
 .media-item span{
     font-size: 18px;
     color: #ffffff;
+    width: 100%;
+    height: auto;
 }
 
 .project-links{

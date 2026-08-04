@@ -2,7 +2,7 @@ const projectsData = {
 
   "wiremus-tour": {
     title: "Wiremu's Tour",
-    heroVideo: "assets/wiremus-tour/trailer.mov",
+    heroVideo: "assets/wiremus-tour/trailer.mp4",
     heroImage: null,
     about: [
       "Wiremu’s Tour is an educational interactive experience that takes children on a journey through Aotearoa’s native wildlife and conservation efforts. Guided by Wiremu, players explore New Zealand’s bush, discover native animals, and learn through interactive storytelling designed specifically for young audiences.",
@@ -17,7 +17,7 @@ const projectsData = {
       targetAudience: ["Children aged 6-8", "Early Readers", "Families and tourists interested in NZ wildlife"]
     },
     myRole: {
-      title: "Gameplay Programmer",
+      title: "Lead Gameplay Programmer",
       intro: [
         "I am one of two programmers responsible for implementing gameplay systems and creating tools that allow the rest of the team to efficiently build educational content."
       ],
@@ -46,50 +46,13 @@ const projectsData = {
       "Focused on engaging children with New Zealand conservation through interactive Storytelling."
     ],
     media: [
-      { image: "assets/wiremus-tour/dialogue-node.png", caption: "Dialogue system Node" }
+      { image: "assets/wiremus-tour/dialogue-node.png", caption: "Dialogue system Node" },
+      { image: "assets/wiremus-tour/colourIn.png", caption: "Colouring-in sheet" },
+      { video: "assets/wiremus-tour/demo.mov", caption: "Wiremu Intro Video" }
     ],
     links: [
       { label: "Git Repo", url: "https://github.com/Shanch1/WiremusTour", icon: "github" },
       { label: "Pitch Presentation", url: "assets/wiremus-tour/presentation.pdf", icon: "google" }
-    ]
-  },
-
-  "streetside": {
-    title: "Streetside",
-    heroVideo: "assets/streetside/demo.mov",
-    heroImage: null,
-    about: ["A fast-paced two-player co-op puzzle game where players race through city mazes to tag graffiti spots while solving environmental puzzles together. Players control Joey and Coco, two aspiring graffiti artists determined to make a name for themselves throughout Clyde City.",
-        "The game combines Pac-Man-inspired grid-based movement with cooperative puzzles solving, unique player abilities, and spray-paining mechanics to create short, repayable levels that reward teamwork and quick decision-making."
-    ],
-    info: {
-      genre: "Co-op Puzzle Game",
-      platform: "PC & Console (Couch Co-op, Online multiplayer)",
-      engine: "Unity 6 (6000.3.5f2)",
-      devTime: "Ongoing (4th Year Capstone Project)",
-      teamSize: "4 Developers (2 Programmers, 1 Artist, 1 Level Designer)",
-      targetAudience: ["Ages 13+", "Fans of cooperative puzzle games", "Fans of fast-paced arcade games", "Couch co-op and online multiplayer audiences"]
-    },
-    myRole: {
-      title: "Gameplay Programmer",
-      intro: ["I am one of two programmers responsible for developing the game’s core gameplay systems and cooperative mechanics."],
-      responsibilities: ["Supported development of grid-based player movement system", "Helped implement two-player gameplay systems", "Built the graffiti spray-painting mechanics", "Developed puzzle interaction systems", "Helping implement player abilities", "Assisting with gameplay integration across levels", "Collaborating with level designer to support puzzle implementation"]
-    },
-    technologies: {
-      programming: ["C#", "Unity 6", "Git"],
-      tools: ["GitHub"],
-      concepts: ["Grid-based Movement", "Multiplayer Gameplay", "Cooperative Gameplay", "Puzzle System Design", "State-based Logic", "Event-driven Programming"]
-    },
-    whatILearned: [
-        "Working on a smaller multidisciplinary team highlighted the importance of designing gameplay systems that were both reusable and easy to build puzzles around.", 
-        "I gained valuable experience implementing cooperative mechanics and I learned how strongly player movement influences puzzle design. Creating systems that felt responsive while remaining predictable was essential for maintaining satisfying gameplay.", 
-        "This project also strengthened my understanding of designing gameplay around a clear core fantasy and ensuring every mechanic supported that vision."
-    ],
-    outcome: ["Designed as a cooperative game that combines fast-paced arcade movement with puzzle-solving and teamwork. The project focused on creating short, repayable levels where every mechanic reinforced cooperation and player expression through graffiti."],
-    media: [
-    ],
-    links: [
-      { label: "Git Repo", url: "https://github.com/piperrenaud/Streetside", icon: "github" },
-      { label: "Demo Pitch Presentation", url: "assets/streetside/presentation.pdf", icon: "google" }
     ]
   },
 
@@ -109,7 +72,7 @@ const projectsData = {
       targetAudience: ["Indie Horror game enjoyers"]
     },
     myRole: {
-      title: "Developer",
+      title: "Solo Developer",
       intro: ["As the sole developer, I was responsible for designing and implementing every gameplay and AI system."],
       responsibilities: [
         "Designed and implemented the enemy AI Finite State Machine",
@@ -144,9 +107,11 @@ const projectsData = {
 
   "ai-car-racer": {
     title: "AI Car Racer",
-    heroImage: "assets/ai-car-racer/cover.png",
+    heroImage: null,
+    heroVideo: "assets/ai-car-racer/trailer.mp4",
     about: ["AI Racing Royale was an AI programming competition where each student developed an autonomous racing car and designed a custom race track under a strict set of competition rules. Every AI car competed on every participant's track, with overall performance determining the final rankings.",
-        "My submission placed 5th out of 20 competitors, demonstrating consistent performance across a wide variety of track layouts."
+        "My user ID is PRE55. The clip above shows my AI car racing on the track that I designed for the competition",
+        "My submission placed 5th out of 20 competitors overall, demonstrating consistent performance across a wide variety of track layouts."
     ],
     info: {
       genre: "Artificial Intelligence / Racing Competition",
@@ -205,7 +170,7 @@ const projectsData = {
       targetAudience: ["Fans of puzzle games", "Fans of true crime/mysteries"]
     },
     myRole: {
-      title: "Sole Developer",
+      title: "Solo Developer",
       intro: ["I focused on implementing core gameplay systems that connected the cleaning simulation with the investigation mechanics, while ensuring each system interacted cohesively to support the game's tension and progression."],
       responsibilities: ["Developed player interaction systems ", 
         "Implemented inventory and item inspection",
@@ -231,6 +196,9 @@ const projectsData = {
         "I would further develop the case-building system by adding deeper deduction mechanics that encourage players to connect evidence and draw their own conclusions. Finally, I would continue refining the balance between cleaning objectives and investigation gameplay while optimising the underlying systems to better support larger, more detailed environments."
     ],
     media: [
+      { video: "assets/deep-clean/homeownertasks.mp4", caption: "Homeowner Tasks" },
+      { video: "assets/deep-clean/Movement_Inspection.mp4", caption: "Player Movement and Inspection" },
+      { video: "assets/deep-clean/Take_Photo.mp4", caption: "Taking a Photo" },
     ],
     links: [
       { label: "Git Repo", url: "https://github.com/piperrenaud/DeepClean_Demo", icon: "github" },
@@ -254,7 +222,7 @@ const projectsData = {
       targetAudience: []
     },
     myRole: {
-      title: "Developer",
+      title: "Solo Developer",
       intro: ["As the sole developer, I researched procedural generation techniques before implementing and refining two procedural generation systems in Unity."],
       responsibilities: ["Researched procedural generation algorithms",
         "Implemented procedural terrain generation",
@@ -304,7 +272,7 @@ const projectsData = {
       targetAudience: ["Fans of realistic graphics"]
     },
     myRole: {
-      title: "Gameplay & Audio Programmer",
+      title: "Main Gameplay & Audio Programmer",
       intro: ["As the project's sole programmer, I was responsible for implementing the player controller, integrating environmental audio systems, and creating scripted events that supported the team's environmental storytelling."],
       responsibilities: ["Developed player movement systems",
         "Integrated gameplay audio provided by the sound designer",
@@ -357,7 +325,7 @@ const projectsData = {
       targetAudience: ["Whoever's reading this :)"]
     },
     myRole: {
-      title: "Designer & Developer",
+      title: "Sole Designer & Developer",
       intro: ["As the sole developer of my own portfolio, I was responsible for every part of this site, from the visual design and layout, to the underlying architecture that powers each project page."],
       responsibilities: ["Designed the overall retro pixel-art visual identity",
         "Built a shared multi-page layout with a persistent nav bar and dark mode toggle",

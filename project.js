@@ -103,11 +103,12 @@ function renderProject(project) {
   if (project.media && project.media.length) {
     html += `<h2 class="section-title">MEDIA</h2>`;
     html += `<div class="media-grid">`;
+
     project.media.forEach(m => {
       html += `
         <div class="media-item">
-          ${imageOrPlaceholder(m.image, 0, 0)}
-          <span>${m.caption}</span>
+          ${mediaOrPlaceholder(m.video, m.image, 0, 0)}
+          ${m.caption ? `<span>${m.caption}</span>` : ""}
         </div>
       `;
     });
@@ -144,6 +145,28 @@ function heroMedia(videoSrc, imageSrc, width, height) {
   }
 
   return imageOrPlaceholder(imageSrc, width, height);
+}
+
+function mediaOrPlaceholder(videoSrc, imageSrc, width, height) {
+  const sizeStyle = (width && height)
+    ? `width:${width}px; height:${height}px;`
+    : `width:100%; height:auto;`;
+    
+    if (videoSrc) {
+      return `
+      <video
+        controls
+        preload="metadata"
+        poster="${imageSrc || ""}"
+        style="${sizeStyle} object-fit:cover; border:4px solid #ffffff;"
+      >
+        <source src="${videoSrc}" type="video/mp4">
+        Your browser does not support HTML video.
+      </video>
+      `;
+    }
+
+    return imageOrPlaceholder(imageSrc, width, height);
 }
 
 function init() {
