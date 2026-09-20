@@ -46,8 +46,8 @@ const projectsData = {
       "Focused on engaging children with New Zealand conservation through interactive Storytelling."
     ],
     media: [
-      { image: "assets/wiremus-tour/dialogue-node.png", caption: "Dialogue system Node" },
-      { image: "assets/wiremus-tour/colourIn.png", caption: "Colouring-in sheet" },
+      { image: "assets/wiremus-tour/colourIn.png", caption: "Colouring-in Activity" },
+      { image: "assets/wiremus-tour/photo.png", caption: "Photo Scanning" },
       { video: "assets/wiremus-tour/demo.mov", caption: "Wiremu Intro Video" }
     ],
     links: [
