@@ -5,14 +5,14 @@ const projectsData = {
     heroVideo: "assets/wiremus-tour/trailer.mp4",
     heroImage: null,
     about: [
-      "Wiremu’s Tour is an educational interactive experience that takes children on a journey through Aotearoa’s native wildlife and conservation efforts. Guided by Wiremu, players explore New Zealand’s bush, discover native animals, and learn through interactive storytelling designed specifically for young audiences.",
-      "The project combines visual storytelling with interactive educational content, encouraging curiosity and environmental awareness through approachable, engaging gameplay."
+      "Wiremu's Tour is an interactive wildlife education experience designed to introduce children to Aotearoa New Zealand's native wildlife, ecosystems and conservation. Guided by Wiremu, children explore different species through storytelling, interactive activities and creative play.",
+      "In this educational novel, users can either learn with a preset design, or they can colour in one of the supplied colouring pages, and with a webcam connected can scan the image into the game and Wiremu talk to their design."
     ],
     info: {
       genre: "Educational Visual Novel/Interactive Learning Experience",
       platform: "PC",
       engine: "Unity 6 (6000.3.5f2)",
-      devTime: "Ongoing (4th Year Capstone Project)",
+      devTime: "30 Weeks (4th Year Capstone Project)",
       teamSize: "10 Developers (6 Artists, 2 Programmers, 1 Researcher, 1 Producer)",
       targetAudience: ["Children aged 6-8", "Early Readers", "Families and tourists interested in NZ wildlife"]
     },
@@ -43,16 +43,24 @@ const projectsData = {
     outcome: [
       "Developed as a 4th-year university capstone project",
       "Designed for in classrooms and educational visitors’ centres",
-      "Focused on engaging children with New Zealand conservation through interactive Storytelling."
+      "Focused on engaging children with New Zealand conservation through interactive Storytelling.",
+      "Exhibited at Willowbank Wildlife Reserve, Christchurch, New Zealand in 2026"
     ],
     media: [
       { image: "assets/wiremus-tour/colourIn.png", caption: "Colouring-in Activity" },
       { image: "assets/wiremus-tour/photo.png", caption: "Photo Scanning" },
-      { video: "assets/wiremus-tour/demo.mov", caption: "Wiremu Intro Video" }
+      { video: "assets/wiremus-tour/demo.mov", caption: "Wiremu Intro Video" },
+      { image: "assets/wiremus-tour/photo6.jpg", caption: "Willowbank Exhibition" },
+      { image: "assets/wiremus-tour/photo2.jpg", caption: "Animal Selection Screen" },
+      { image: "assets/wiremus-tour/photo3.jpg", caption: "Weta Dialogue" },
+      { image: "assets/wiremus-tour/photo4.jpg", caption: "Kiwi Dialogue" },
+      { image: "assets/wiremus-tour/photo5.png", caption: "Wiremu" },
+      { image: "assets/wiremus-tour/photo1.jpg", caption: "Poster" }
     ],
     links: [
       { label: "Git Repo", url: "https://github.com/Shanch1/WiremusTour", icon: "github" },
-      { label: "Pitch Presentation", url: "assets/wiremus-tour/presentation.pdf", icon: "google" }
+      { label: "Pitch Presentation", url: "assets/wiremus-tour/presentation.pdf", icon: "google" },
+      { label: "Itch.io Page (Password: KuneKuneWiremu)", url: "https://samuel-kennedy.itch.io/wiremus-tour", icon: "heart" }
     ]
   },
 
